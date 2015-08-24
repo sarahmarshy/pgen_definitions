@@ -1,0 +1,8 @@
+mcu:
+    vendor: freescale
+    name: mkl26z128xxx4
+    core: cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            DeviceId: 6835

@@ -1,0 +1,13 @@
+mcu:
+    vendor: st
+    name: STM32F401RC
+    core: cortex-m4
+tool_specific: 
+    uvision: 
+        TargetOption: 
+            DeviceId: 7383
+    iar: 
+        OGChipSelectEditMenu: 
+          state: STM32F401xE ST STM32F401xE
+        OGCoreOrChip: 
+          state: 1

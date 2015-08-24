@@ -1,0 +1,8 @@
+mcu:
+    vendor: st
+    name: STM32F439ZI
+    core: cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            DeviceId: 7024

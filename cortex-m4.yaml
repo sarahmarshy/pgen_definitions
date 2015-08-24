@@ -1,0 +1,8 @@
+mcu:
+    vendor: arm
+    name: cortex-m4
+    core: cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device: Cortex-M4

@@ -1,0 +1,8 @@
+mcu:
+    vendor: arm
+    name: cortex-m0
+    core: cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device: Cortex-M0
