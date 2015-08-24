@@ -31,7 +31,7 @@ Once you have a valid project file from a tool, you can use pgen's import comman
 
 The commands usage is as follows:
 ```python
-pgen import -mcu (MCU name) -t Tool -f Project File -dir Directory to store definitions.
+pgen import -mcu (MCU name) -t (Tool) -f (Project File) -dir (Directory to store definition)
 ```
 For a uvision project with lpc1768:
 ```python
