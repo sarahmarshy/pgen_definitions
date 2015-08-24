@@ -8,7 +8,7 @@ Since pgen v0.7, there's import command, please refer to project generator repos
 
 To generalize MCU's, there's a target definition available. The target name does not change based on the tool used. There's file board_definitions, where are all boards supported defined. There's a dictionary which translates the target name to the tool's specific MCU name.
 
-If a project defines frdm-k20d50m as target, the proper mcu settings will be set for a tool. The project must define its target with a name that is a substring of one of the files contained in this repository. For instance, a k64f is defined by the file mk64fn1m0xxx12.yaml. You can see that k64f is a substring of the filename. In your project, use any valid substring of mk64fn1m0xxx12 to specify k64f.
+If a project defines a valid target, the proper mcu settings will be set for a tool. The project must define its target with a name that is a substring of one of the files contained in this repository. For instance, a k64f is defined by the file mk64fn1m0xxx12.yaml. You can see that k64f is a substring of the filename. In your project, use any valid substring of mk64fn1m0xxx12 to specify k64f.
 
 ### MCU
 
