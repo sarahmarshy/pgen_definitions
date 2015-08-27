@@ -1,7 +1,7 @@
 mcu:
-  core: cortex-m4f
+  core: Cortex-M4f
   name: mk64fn1m0xxx12
-  vendor: freescale
+  vendor: Freescale
 tool_specific:
   iar:
     OGChipSelectEditMenu:
@@ -10,5 +10,8 @@ tool_specific:
       state: 1
   uvision:
     TargetOption:
-      Device: null
+      Device: MK64FN1M0xxx12
       DeviceId: 7425
+  uvision5:
+    TargetOption:
+      Device: MK64FN1M0xxx12
