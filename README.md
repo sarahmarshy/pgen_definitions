@@ -58,7 +58,7 @@ All information in the code above are from uVision project.
 
 How to get all this information for a new mcu? Create a new project in uVision, select your target, save the project. 
 
-Once you specified all needed information, test to build your project and check if the correct target is set in the uVision project. Then run the import command with the .uvproj file as the project file parameter.
+Once you specified all needed information, build your project and check if the correct target is set in the uVision project. Then run the import command with the .uvproj file as the project file parameter.
 
 ### IAR
 
@@ -72,7 +72,7 @@ Once you specified all needed information, test to build your project and check 
 
 In the code above, LPC1768 is defined. To add a new target, create a new project in IAR, select your desired target, save the project. 
 
-Once you specified all needed information, test to build your project and check if the correct target is set in the IAR project.
+Once you specified all needed information, build your project and check if the correct target is set in the IAR project.
 
-If it does, use the import commmand with the .ewp project file as a parameter.
+If the project builds, use the import commmand with the .ewp project file as a parameter.
 
