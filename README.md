@@ -31,11 +31,11 @@ Once you have a valid project file from a tool, you can use pgen's import comman
 
 The commands usage is as follows:
 ```python
-pgen import -mcu (MCU name) -t (Tool) -f (Project File) -dir (Directory to store definition)
+pgen import -mcu (MCU name) -f (Project File) -dir (Directory to store definition)
 ```
 For a uvision project with lpc1768:
 ```python
-pgen import -mcu lpc1768 -t uvision -f project.uvproj
+pgen import -mcu lpc1768 -f project.uvproj
 ```
 You can see that the directory was left off. When generating projects, pgen will search ~/.defs/definitions by default for target definitions. This directory will be updated by pgen, which will pull from/clone this repository with each run. When you omit the directory flag from the import command, your new definition will be added to ~/.defs/definitions. You will need to make a pull request to add that change to this repository, but it will be held locally for your use. If you choose to use a different directory, you will need to specify it when running the other commands, so that pgen searches there instead of the default.
 
@@ -75,4 +75,7 @@ In the code above, LPC1768 is defined. To add a new target, create a new project
 Once you specified all needed information, build your project and check if the correct target is set in the IAR project.
 
 If the project builds, use the import commmand with the .ewp project file as a parameter.
+
+
+NOTE: The extension provided must be for of the tools that requires extra information about targets (Uvison, IAR, and Uvision5). The accepted extensions are '.uvproj', '.uvprojx', and '.ewp'.
 
