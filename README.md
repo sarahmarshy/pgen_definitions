@@ -77,5 +77,6 @@ Once you specified all needed information, build your project and check if the c
 If the project builds, use the import commmand with the .ewp project file as a parameter.
 
 
-NOTE: The extension provided must be for of the tools that requires extra information about targets (Uvison, IAR, and Uvision5). The accepted extensions are '.uvproj', '.uvprojx', and '.ewp'.
+#####Note
+The extension provided must be for of the tools that requires extra information about targets (Uvison, IAR, and Uvision5). The accepted extensions are '.uvproj', '.uvprojx', and '.ewp'.
 
