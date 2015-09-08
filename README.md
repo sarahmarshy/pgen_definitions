@@ -2,7 +2,6 @@
 
 This repository defines definitions for targets and mcus. They are used to set proper data in the tools.
 
-Since pgen v0.7, there's import command, please refer to project generator repository to find out more about how to get the mcu definition file. The idea is to provide a project which has defined MCU. Pgen will import required data and creates mcu definition yaml file.
 
 ### Target
 
@@ -12,7 +11,7 @@ If a project defines a valid target, the proper mcu settings will be set for a t
 
 ### MCU
 
-MCU record defines the basic information about the mcu and specific settings for each tool. As an example is shown the uvision settings for the lpc1768 mcu. The data can be obtain from the project files. Look for keys TargetOption in uvision project file. You can use pgen's import command to import MCU information from a valid project file into this repository.
+MCU record defines the basic information about the mcu and specific settings for each tool. As an example is shown the uvision settings for the lpc1768 mcu. The data can be obtain from the project files. Look for keys TargetOption in uvision project file. You can use pgen's extract command to extract MCU information from a valid project file. You can submit a pull request to this repository if you want the target to be officially affed to pgen.
 
 ```
 mcu:
@@ -25,9 +24,9 @@ tool_specific:
             Device: LPC1768
             DeviceId: 4868
 ```
-### Import Command
+### Extract Command
 
-Once you have a valid project file from a tool, you can use pgen's import command.
+Once you have a valid project file from a tool, you can use pgen's extract command.
 
 The commands usage is as follows:
 ```python
@@ -35,7 +34,7 @@ pgen extract -m (MCU name) -f (Project File)
 ```
 For a uvision project with lpc1768:
 ```python
-pgen import -mcu lpc1768 -f project.uvproj
+pgen extract -mcu lpc1768 -f project.uvproj
 ```
 The output yaml will be saved in the current directory.
 
@@ -58,7 +57,7 @@ All information in the code above are from uVision project.
 
 How to get all this information for a new mcu? Create a new project in uVision, select your target, save the project. 
 
-Once you specified all needed information, build your project and check if the correct target is set in the uVision project. Then run the import command with the .uvproj file as the project file parameter.
+Once you specified all needed information, build your project and check if the correct target is set in the uVision project. Then run the extract command with the .uvproj file as the project file parameter.
 
 ### IAR
 
@@ -74,7 +73,7 @@ In the code above, LPC1768 is defined. To add a new target, create a new project
 
 Once you specified all needed information, build your project and check if the correct target is set in the IAR project.
 
-If the project builds, use the import commmand with the .ewp project file as a parameter.
+If the project builds, use the extract commmand with the .ewp project file as a parameter.
 
 
 #####Note
